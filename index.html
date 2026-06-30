@@ -5,21 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pilates Santana | Studio De Pilates Daniela Akemi | São Paulo</title>
 <meta name="description" content="Studio Akemi, Treinamento funcional e Pilates é um espaço voltado para o bem-estar e a saúde, um lugar para quem procura uma atividade física de qualidade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <!-- ===== Faixa de endereço ===== -->
 <div class="topo-endereco">
-  Endereço: Rua Três Mosqueteiros, 50 - Santana, São Paulo - SP, 02013-060, Brasil - 11
+  Endereço: Rua Três Mosqueteiros, 50 - Santana, São Paulo - SP, 02013-060, Brasil &nbsp;·&nbsp; 11
   <a href="tel:+551126132221">2613-2221</a>
 </div>
 
 <!-- ===== Cabeçalho ===== -->
 <header class="cabecalho">
   <div class="container">
-    <a href="#inicio">
-      <img class="logo" src="assets/img/logo-studio-akemi.jpg" alt="Studio Akemi - Treinamento Funcional & Pilates">
+    <a href="#inicio" class="logo-link">
+      <span class="logo-texto">studio<span class="logo-destaque">Akemi</span></span>
+      <span class="logo-tagline">Treinamento Funcional &amp; Pilates</span>
     </a>
   </div>
 </header>
@@ -41,160 +45,162 @@
 </nav>
 
 <!-- ===== Hero inicial (funcional + pilates) ===== -->
-<section id="inicio" class="hero" style="background-image: linear-gradient(rgba(20,20,20,0.55), rgba(20,20,20,0.55)), url('assets/img/hero-funcional-pilates.png');">
+<section id="inicio" class="hero corte-baixo" style="background-image: linear-gradient(120deg, rgba(10,10,10,0.78) 30%, rgba(10,10,10,0.35)), url('assets/img/hero-funcional-pilates.png');">
+  <span class="marca-dagua">FUNCIONAL</span>
+  <div class="blob blob-laranja blob-topo-esq"></div>
   <div class="container">
-    <div class="hero-conteudo">
-      <p>Gaste até</p>
-      <h1 style="font-size:2.4rem; font-weight:800; color: var(--cor-laranja);">800 calorias por treino</h1>
+    <div class="hero-conteudo reveal">
+      <p class="hero-eyebrow">Gaste até</p>
+      <h1 class="hero-titulo-laranja">800 calorias<br>por treino</h1>
       <div class="hero-preco">
         <span class="a-partir">a partir de</span>
         <span class="valor">130<span class="centavos">,00*</span></span>
       </div>
-      <br>
-      <a href="#planos-funcional" class="botao">Começar agora!</a>
+      <a href="#planos-funcional" class="botao botao-laranja">Começar agora!</a>
     </div>
   </div>
 </section>
 
 <!-- ===== Pilates - apresentação ===== -->
-<section id="pilates" class="hero" style="background-image: linear-gradient(rgba(106,44,145,0.45), rgba(106,44,145,0.45)), url('assets/img/pilates-mulher-deitada.png');">
+<section id="pilates" class="hero corte-cima corte-baixo" style="background-image: linear-gradient(120deg, rgba(106,44,145,0.82) 30%, rgba(106,44,145,0.35)), url('assets/img/pilates-mulher-deitada.png');">
+  <span class="marca-dagua">PILATES</span>
   <div class="container">
-    <div class="hero-conteudo">
-      <h2 style="font-size:2.2rem; font-weight:800;">Melhore sua qualidade <br>de vida</h2>
+    <div class="hero-conteudo reveal">
+      <h2 class="hero-titulo">Melhore sua<br>qualidade de vida</h2>
       <div class="hero-preco">
         <span class="a-partir">a partir de</span>
-        <span class="valor">189<span class="centavos">,00*</span></span>
+        <span class="valor valor-roxo">189<span class="centavos">,00*</span></span>
       </div>
-      <br>
-      <a href="#planos-pilates" class="botao roxo">Começar agora!</a>
+      <a href="#planos-pilates" class="botao botao-roxo">Começar agora!</a>
     </div>
   </div>
 </section>
 
 <!-- ===== Descritivo do studio (Pilates) ===== -->
-<section class="descritivo">
-  <div class="container" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center;">
-    <div style="flex:1 1 320px;">
-      <h2 class="titulo-roxo">Pilates</h2>
-      <h3 style="color:var(--cor-preto); font-weight:700; margin-bottom:18px;">O Studio</h3>
+<section class="descritivo corte-cima">
+  <div class="container grade-descritivo">
+    <div class="reveal">
+      <p class="subtitulo-laranja">Pilates</p>
+      <h2 class="titulo-roxo">O Studio</h2>
       <p>Nosso estúdio oferece um espaço <strong>moderno, todo climatizado</strong>, melhorando seu conforto e seu bem estar na hora de seu treinamento.</p>
       <p>Nossa equipe conta com <strong>profissionais altamente qualificados</strong> prontos para atender o seu objetivo.</p>
-      <a href="#planos-pilates" class="botao roxo">Planos a partir de R$ 199,00*</a>
+      <a href="#planos-pilates" class="botao botao-roxo">Planos a partir de R$ 199,00*</a>
     </div>
-    <div style="flex:1 1 320px;">
+    <div class="imagem-recortada reveal">
       <img src="assets/img/pilates-mulher-deitada.png" alt="Equipamentos do Studio de Pilates Akemi">
     </div>
   </div>
 </section>
 
 <!-- ===== Treinamento Funcional - apresentação ===== -->
-<section id="funcional" class="hero" style="background-image: linear-gradient(rgba(20,20,20,0.55), rgba(20,20,20,0.55)), url('assets/img/bg-treinamento-funcional.jpg');">
+<section id="funcional" class="hero corte-cima corte-baixo" style="background-image: linear-gradient(90deg, rgba(10,10,10,0.85) 35%, rgba(10,10,10,0.45)), url('assets/img/bg-treinamento-funcional.jpg');">
   <div class="container">
-    <div class="hero-conteudo">
-      <h2 style="font-size:3rem; font-weight:800; color: var(--cor-laranja);">Queime</h2>
-      <p style="font-size:1.4rem;"><strong>800</strong> calorias por aula com o treinamento funcional</p>
-      <p style="margin-top:14px;">Além da tonificação muscular, o <strong>treinamento funcional</strong> implica numa maior complexidade do movimento e no envolvimento de várias capacidades físicas.</p>
+    <div class="hero-conteudo reveal">
+      <h2 class="hero-titulo-laranja titulo-queime">Queime</h2>
+      <p class="texto-grande"><strong class="numero-laranja">800</strong> calorias por aula com o treinamento funcional</p>
+      <p class="texto-medio">Além da tonificação muscular, o <strong>treinamento funcional</strong> implica numa maior complexidade do movimento e no envolvimento de várias capacidades físicas.</p>
     </div>
   </div>
 </section>
 
 <!-- ===== Planos - Pilates ===== -->
-<section id="planos-pilates" class="planos tema-pilates" style="background-image: linear-gradient(rgba(255,255,255,0.88), rgba(235,235,235,0.92)), url('assets/img/bg-plano-pilates.jpg'); color: var(--cor-preto);">
-  <div class="container">
+<section id="planos-pilates" class="planos tema-pilates corte-cima corte-baixo" style="background-image: linear-gradient(rgba(245,245,245,0.93), rgba(235,235,235,0.95)), url('assets/img/bg-plano-pilates.jpg');">
+  <div class="blob blob-roxo blob-direita"></div>
+  <div class="container reveal">
     <h2>PILATES</h2>
     <div class="cards-preco">
       <div class="card-preco">
         <p class="freq">1x por semana</p>
-        <p class="preco">245,00</p>
+        <p class="preco">245<span class="preco-centavos">,00</span></p>
       </div>
       <div class="card-preco">
         <p class="freq">2x / semana</p>
-        <p class="preco">349,00</p>
+        <p class="preco">349<span class="preco-centavos">,00</span></p>
       </div>
       <div class="card-preco">
         <p class="freq">3x / semana</p>
-        <p class="preco">462,00</p>
+        <p class="preco">462<span class="preco-centavos">,00</span></p>
       </div>
-      <div class="card-preco gratis" style="background:#fff; color:var(--cor-preto);">
-        tenha uma <br><strong>EXPERIÊNCIA GRÁTIS!</strong>
-        <br><br>
-        <a href="#contato" class="botao roxo" style="font-size:0.85rem; padding:8px 16px;">Agende aqui!</a>
-      </div>
-    </div>
-    <p class="aviso-horario" style="color:#555;">*Valores para horário de treinamento das 10:00 às 16:00hrs. Para demais valores e horários, consulte-nos.</p>
-  </div>
-</section>
-
-<!-- ===== Planos - Treinamento Funcional ===== -->
-<section id="planos-funcional" class="planos tema-funcional" style="background-image: linear-gradient(rgba(20,20,20,0.55), rgba(20,20,20,0.65)), url('assets/img/bg-plano-treinamento.jpg');">
-  <div class="container">
-    <h2>TREINAMENTO FUNCIONAL <br><span style="font-size:1.2rem; background:var(--cor-laranja); padding:4px 10px; border-radius:4px;">PLANO ANUAL</span></h2>
-    <div class="cards-preco">
-      <div class="card-preco">
-        <p class="freq">1x por semana</p>
-        <p class="preco">145,00</p>
-      </div>
-      <div class="card-preco">
-        <p class="freq">2x / semana</p>
-        <p class="preco">227,00</p>
-      </div>
-      <div class="card-preco">
-        <p class="freq">3x / semana</p>
-        <p class="preco">290,00</p>
-      </div>
-      <div class="card-preco gratis" style="background:#fff; color:var(--cor-preto);">
-        tenha uma <br><strong>EXPERIÊNCIA GRÁTIS!</strong>
-        <br><br>
-        <a href="#contato" class="botao" style="font-size:0.85rem; padding:8px 16px;">Agende aqui!</a>
+      <div class="card-preco gratis">
+        <p>tenha uma<br><strong>EXPERIÊNCIA<br>GRÁTIS!</strong></p>
+        <a href="#contato" class="botao botao-roxo botao-pequeno">Agende aqui!</a>
       </div>
     </div>
     <p class="aviso-horario">*Valores para horário de treinamento das 10:00 às 16:00hrs. Para demais valores e horários, consulte-nos.</p>
   </div>
 </section>
 
+<!-- ===== Planos - Treinamento Funcional ===== -->
+<section id="planos-funcional" class="planos tema-funcional corte-cima corte-baixo" style="background-image: linear-gradient(rgba(10,10,10,0.75), rgba(10,10,10,0.85)), url('assets/img/bg-plano-treinamento.jpg');">
+  <div class="blob blob-laranja blob-esquerda"></div>
+  <div class="container reveal">
+    <h2>TREINAMENTO FUNCIONAL <span class="selo-plano">PLANO ANUAL</span></h2>
+    <div class="cards-preco">
+      <div class="card-preco">
+        <p class="freq">1x por semana</p>
+        <p class="preco">145<span class="preco-centavos">,00</span></p>
+      </div>
+      <div class="card-preco">
+        <p class="freq">2x / semana</p>
+        <p class="preco">227<span class="preco-centavos">,00</span></p>
+      </div>
+      <div class="card-preco">
+        <p class="freq">3x / semana</p>
+        <p class="preco">290<span class="preco-centavos">,00</span></p>
+      </div>
+      <div class="card-preco gratis">
+        <p>tenha uma<br><strong>EXPERIÊNCIA<br>GRÁTIS!</strong></p>
+        <a href="#contato" class="botao botao-laranja botao-pequeno">Agende aqui!</a>
+      </div>
+    </div>
+    <p class="aviso-horario aviso-claro">*Valores para horário de treinamento das 10:00 às 16:00hrs. Para demais valores e horários, consulte-nos.</p>
+  </div>
+</section>
+
 <!-- ===== Combo Promocional ===== -->
-<section id="combo" class="combo">
-  <div class="container" style="display:flex; flex-wrap:wrap; gap:30px; align-items:center;">
-    <div style="flex:1 1 320px;">
+<section id="combo" class="combo corte-cima">
+  <div class="container grade-descritivo">
+    <div class="imagem-recortada reveal">
       <img src="assets/img/bg-combo.jpg" alt="Combo Treinamento Funcional + Pilates">
     </div>
-    <div style="flex:1 1 320px;">
-      <h2>TREINE COM HORÁRIO LIVRE!</h2>
-      <p class="subtitulo">É o seu treino, na hora em que você quiser!</p>
-      <span class="faixa-titulo">TREINAMENTO FUNCIONAL + PILATES</span>
-      <p style="font-size:0.85rem; color:#555; margin-bottom:18px;">*Treine sem compromisso de horário fixo</p>
-      <a href="#contato" class="botao roxo">Agende aqui!</a>
+    <div class="reveal">
+      <h2 class="titulo-roxo">TREINE COM HORÁRIO LIVRE!</h2>
+      <p class="subtitulo-roxo">É o seu treino, na hora em que você quiser!</p>
+      <span class="faixa-titulo">Treinamento Funcional + Pilates</span>
+      <p class="aviso-horario aviso-escuro">*Treine sem compromisso de horário fixo</p>
+      <a href="#contato" class="botao botao-roxo">Agende aqui!</a>
     </div>
   </div>
 </section>
 
 <!-- ===== Contato ===== -->
-<section id="contato" class="contato">
+<section id="contato" class="contato corte-cima">
   <div class="container">
     <div class="contato-grid">
-      <div>
+      <div class="reveal">
         <h3>Endereço</h3>
         <p>Rua Três Mosqueteiros, 50 - Santana,<br>São Paulo - SP, 02013-060, Brasil</p>
         <p style="margin-top:14px;">Central De Atendimento: 11
-          <a href="tel:+551126132221" style="text-decoration:underline;">2613-2221</a>
+          <a href="tel:+551126132221" class="link-sublinhado">2613-2221</a>
         </p>
-        <div style="margin-top:20px;">
+        <div class="mapa-wrapper">
           <iframe
             loading="lazy"
+            title="Localização Studio Akemi"
             src="https://www.google.com/maps?q=Rua+Tr%C3%AAs+Mosqueteiros,+50+-+Santana,+S%C3%A3o+Paulo+-+SP,+02013-060&output=embed">
           </iframe>
         </div>
       </div>
-      <div>
+      <div class="reveal">
         <h3>Agende sua aula gratuita</h3>
-        <p style="margin-bottom:16px; font-size:0.9rem; opacity:0.85;">Preencha os campos abaixo e informe a data que gostaria de agendar a sua aula grátis de treinamento funcional ou/e pilates.</p>
+        <p class="texto-suave">Preencha os campos abaixo e informe a data que gostaria de agendar a sua aula grátis de treinamento funcional ou/e pilates.</p>
         <form class="form-contato">
           <input class="form-campo" type="text" name="nome" placeholder="Nome *" required>
           <input class="form-campo" type="email" name="email" placeholder="Email *" required>
           <input class="form-campo" type="tel" name="telefone" placeholder="Telefone *" required>
           <input class="form-campo" type="text" name="data" placeholder="Data de agendamento" onfocus="(this.type='date')">
           <textarea class="form-campo" name="observacoes" placeholder="Observações"></textarea>
-          <button type="submit" class="botao roxo" style="border:none; cursor:pointer;">Enviar</button>
+          <button type="submit" class="botao botao-roxo">Enviar</button>
         </form>
       </div>
     </div>
@@ -202,20 +208,20 @@
 </section>
 
 <!-- ===== Rodapé final ===== -->
-<div class="rodape-final" style="background: var(--cor-preto); color: var(--cor-branco);">
+<div class="rodape-final">
   © 2018 Daniela Akemi Studio De Pilates e Treinamento Funcional - Todos os direitos reservados
   <div class="redes-sociais">
-    <a href="https://www.instagram.com/studioakemii/" target="_blank" rel="noopener">
+    <a href="https://www.instagram.com/studioakemii/" target="_blank" rel="noopener" aria-label="Instagram">
       <img src="assets/img/icone-instagram.png" alt="Instagram">
     </a>
-    <a href="https://www.facebook.com/danielaakemistudio" target="_blank" rel="noopener">
+    <a href="https://www.facebook.com/danielaakemistudio" target="_blank" rel="noopener" aria-label="Facebook">
       <img src="assets/img/icone-facebook.png" alt="Facebook">
     </a>
   </div>
 </div>
 
 <!-- ===== Botão flutuante WhatsApp ===== -->
-<a class="whatsapp-flutuante" href="https://api.whatsapp.com/send?phone=5511126132221&text=" target="_blank" rel="noopener">
+<a class="whatsapp-flutuante" href="https://api.whatsapp.com/send?phone=5511126132221&text=" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>
 
