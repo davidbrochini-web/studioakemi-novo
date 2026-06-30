@@ -1,72 +1,50 @@
-// Studio Akemi — script.js
-// Protótipo — interações de interface (menu, scroll reveal, formulário)
-
 document.addEventListener('DOMContentLoaded', function () {
 
-  // ===== Menu mobile =====
-  var botaoMenu = document.querySelector('.menu-toggle');
-  var listaMenu = document.querySelector('.menu-lista');
-
-  if (botaoMenu && listaMenu) {
-    botaoMenu.addEventListener('click', function () {
-      listaMenu.classList.toggle('aberto');
+  // --- Menu mobile ---
+  var toggle = document.querySelector('.nav-toggle');
+  var nav    = document.querySelector('.nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      nav.classList.toggle('aberta');
     });
-
-    listaMenu.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        listaMenu.classList.remove('aberto');
-      });
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { nav.classList.remove('aberta'); });
     });
   }
 
-  // ===== Destaca o link do menu correspondente à seção visível =====
-  var secoes = document.querySelectorAll('section[id]');
-  var linksMenu = document.querySelectorAll('.menu-lista a');
+  // --- Scroll reveal ---
+  var els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entries, o) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('visivel'); o.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function (el) { obs.observe(el); });
+  } else {
+    els.forEach(function (el) { el.classList.add('visivel'); });
+  }
 
-  var observerMenu = new IntersectionObserver(function (entradas) {
-    entradas.forEach(function (entrada) {
-      if (entrada.isIntersecting) {
-        var id = entrada.target.getAttribute('id');
-        linksMenu.forEach(function (link) {
-          link.classList.toggle('ativo', link.getAttribute('href') === '#' + id);
+  // --- Destaque do item de menu ativo ---
+  var secoes = document.querySelectorAll('section[id]');
+  var links  = document.querySelectorAll('.nav-lista a');
+  var obsMenu = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        links.forEach(function (l) {
+          l.classList.toggle('ativo', l.getAttribute('href') === '#' + e.target.id);
         });
       }
     });
-  }, { rootMargin: '-45% 0px -45% 0px' });
+  }, { rootMargin: '-40% 0px -40% 0px' });
+  secoes.forEach(function (s) { obsMenu.observe(s); });
 
-  secoes.forEach(function (secao) {
-    observerMenu.observe(secao);
-  });
-
-  // ===== Scroll reveal: anima elementos .reveal ao entrarem na tela =====
-  var elementosReveal = document.querySelectorAll('.reveal');
-
-  if ('IntersectionObserver' in window) {
-    var observerReveal = new IntersectionObserver(function (entradas, observer) {
-      entradas.forEach(function (entrada) {
-        if (entrada.isIntersecting) {
-          entrada.target.classList.add('visivel');
-          observer.unobserve(entrada.target);
-        }
-      });
-    }, { threshold: 0.15 });
-
-    elementosReveal.forEach(function (el) {
-      observerReveal.observe(el);
-    });
-  } else {
-    // navegador antigo sem suporte: mostra tudo direto
-    elementosReveal.forEach(function (el) {
-      el.classList.add('visivel');
-    });
-  }
-
-  // ===== Formulário de contato — protótipo sem backend ainda =====
-  var formulario = document.querySelector('.form-contato');
-  if (formulario) {
-    formulario.addEventListener('submit', function (e) {
+  // --- Form (protótipo) ---
+  var form = document.querySelector('.form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
-      alert('Protótipo: formulário ainda não está conectado a um backend. Em produção, isso enviará um e-mail ou abrirá o WhatsApp automaticamente.');
+      alert('Mensagem enviada! (protótipo — backend a configurar em produção)');
     });
   }
 
