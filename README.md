@@ -14,25 +14,15 @@ em HTML/CSS/JS puro, para validação com o cliente antes da migração de DNS.
 - [x] Formulário de contato (visual — ainda sem backend de envio)
 - [x] Mapa incorporado (Google Maps embed, endereço real)
 - [x] Botão flutuante de WhatsApp
-- [ ] Imagens originais hospedadas localmente (ver seção abaixo)
+- [x] Imagens originais hospedadas localmente (`assets/img/`)
 - [ ] Backend real para o formulário de contato (hoje só mostra um alerta)
 - [ ] Aprovação do cliente
 - [ ] Migração de DNS
 
-## ⚠️ Sobre as imagens
+## ✅ Imagens
 
-O ambiente que gerou este protótipo (Claude) **não tem acesso de rede ao domínio
-`static.wixstatic.com`**, então as imagens estão atualmente em **hotlink**
-(apontando direto pra URL do Wix). Isso funciona visualmente, mas:
-
-- Depende do site Wix continuar no ar
-- Quando vocês cancelarem o Wix, as imagens vão quebrar
-- Não é uma prática recomendada para produção
-
-**Solução**: rode o script `baixar-imagens-originais.sh` no seu computador
-(não dá pra rodar no ambiente do Claude) para baixar as imagens de verdade
-para `assets/img/`. Depois disso, as URLs no `index.html` precisam ser
-trocadas de `https://static.wixstatic.com/...` para `assets/img/nome-arquivo`.
+As imagens originais já foram baixadas e estão hospedadas localmente em
+`assets/img/`. O site não depende mais do CDN do Wix.
 
 ## Estrutura de arquivos
 
