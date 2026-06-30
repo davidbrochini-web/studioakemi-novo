@@ -44,72 +44,81 @@
   </div>
 </nav>
 
-<!-- ===== Hero inicial (funcional + pilates) ===== -->
-<section id="inicio" class="hero corte-baixo" style="background-image: linear-gradient(120deg, rgba(10,10,10,0.78) 30%, rgba(10,10,10,0.35)), url('assets/img/hero-funcional-pilates.png');">
-  <span class="marca-dagua">FUNCIONAL</span>
-  <div class="blob blob-laranja blob-topo-esq"></div>
-  <div class="container">
-    <div class="hero-conteudo reveal">
-      <p class="hero-eyebrow">Gaste até</p>
-      <h1 class="hero-titulo-laranja">800 calorias<br>por treino</h1>
-      <div class="hero-preco">
-        <span class="a-partir">a partir de</span>
-        <span class="valor">130<span class="centavos">,00*</span></span>
-      </div>
-      <a href="#planos-funcional" class="botao botao-laranja">Começar agora!</a>
+<!-- ===== Hero inicial (funcional + pilates) — colagem com marca d'água ===== -->
+<section id="inicio" class="hero-inicio">
+  <div class="cta-blob cta-blob-laranja reveal">
+    <p class="cta-eyebrow">Gaste até</p>
+    <p class="cta-titulo">800<br>calorias por treino</p>
+    <p class="cta-a-partir">a partir de</p>
+    <p class="cta-preco">130<span class="cta-centavos">,00*</span></p>
+    <a href="#planos-funcional" class="botao botao-laranja botao-pequeno">Começar agora!</a>
+  </div>
+
+  <div class="colagem-wrap">
+    <div class="watermark-coluna watermark-esq" aria-hidden="true">
+      <span>FUN</span><span>CIO</span><span>NAL</span>
+    </div>
+    <img class="colagem-foto" src="assets/img/hero-funcional-pilates.png" alt="Treinamento Funcional e Pilates - Studio Akemi">
+    <div class="watermark-coluna watermark-dir" aria-hidden="true">
+      <span>PI</span><span>LA</span><span>TES</span>
     </div>
   </div>
 </section>
 
 <!-- ===== Pilates - apresentação ===== -->
-<section id="pilates" class="hero corte-cima corte-baixo" style="background-image: linear-gradient(120deg, rgba(106,44,145,0.82) 30%, rgba(106,44,145,0.35)), url('assets/img/pilates-mulher-deitada.png');">
-  <span class="marca-dagua">PILATES</span>
-  <div class="container">
-    <div class="hero-conteudo reveal">
+<section id="pilates" class="hero-roxo">
+  <div class="container hero-roxo-conteudo reveal">
+    <div>
       <h2 class="hero-titulo">Melhore sua<br>qualidade de vida</h2>
-      <div class="hero-preco">
-        <span class="a-partir">a partir de</span>
-        <span class="valor valor-roxo">189<span class="centavos">,00*</span></span>
-      </div>
+      <p class="cta-a-partir">a partir de</p>
+      <p class="cta-preco">189<span class="cta-centavos">,00*</span></p>
       <a href="#planos-pilates" class="botao botao-roxo">Começar agora!</a>
     </div>
+    <img class="hero-roxo-foto" src="assets/img/pilates-mulher-deitada.png" alt="Mulher praticando Pilates">
   </div>
 </section>
 
 <!-- ===== Descritivo do studio (Pilates) ===== -->
-<section class="descritivo corte-cima">
-  <div class="container grade-descritivo">
-    <div class="reveal">
-      <p class="subtitulo-laranja">Pilates</p>
-      <h2 class="titulo-roxo">O Studio</h2>
+<section class="descritivo">
+  <div class="descritivo-diagonal">
+    <div class="descritivo-texto reveal">
+      <h2 class="titulo-roxo">Pilates</h2>
+      <h3 class="subtitulo-o-studio">O Studio</h3>
       <p>Nosso estúdio oferece um espaço <strong>moderno, todo climatizado</strong>, melhorando seu conforto e seu bem estar na hora de seu treinamento.</p>
       <p>Nossa equipe conta com <strong>profissionais altamente qualificados</strong> prontos para atender o seu objetivo.</p>
-      <a href="#planos-pilates" class="botao botao-roxo">Planos a partir de R$ 199,00*</a>
     </div>
-    <div class="imagem-recortada reveal">
-      <img src="assets/img/pilates-mulher-deitada.png" alt="Equipamentos do Studio de Pilates Akemi">
+    <div class="descritivo-imagem">
+      <img src="assets/img/pilates-mulher-deitada.png" alt="Studio de Pilates Akemi">
+      <div class="cta-blob cta-blob-roxo cta-blob-canto-direito">
+        <p class="cta-a-partir">Planos a partir de</p>
+        <p class="cta-preco cta-preco-pequeno">199<span class="cta-centavos">,00*</span></p>
+        <a href="#planos-pilates" class="botao botao-roxo botao-pequeno">Conheça nossos planos</a>
+      </div>
     </div>
   </div>
+  <p class="nota-imagem">* Imagem ilustrativa do espaço — foto real do interior do estúdio entra aqui assim que recebermos do cliente.</p>
 </section>
 
 <!-- ===== Treinamento Funcional - apresentação ===== -->
-<section id="funcional" class="hero corte-cima corte-baixo" style="background-image: linear-gradient(90deg, rgba(10,10,10,0.85) 35%, rgba(10,10,10,0.45)), url('assets/img/bg-treinamento-funcional.jpg');">
-  <div class="container">
-    <div class="hero-conteudo reveal">
-      <h2 class="hero-titulo-laranja titulo-queime">Queime</h2>
-      <p class="texto-grande"><strong class="numero-laranja">800</strong> calorias por aula com o treinamento funcional</p>
-      <p class="texto-medio">Além da tonificação muscular, o <strong>treinamento funcional</strong> implica numa maior complexidade do movimento e no envolvimento de várias capacidades físicas.</p>
-    </div>
+<section id="funcional" class="hero-funcional" style="background-image: linear-gradient(90deg, rgba(8,8,8,0.92) 30%, rgba(8,8,8,0.55)), url('assets/img/bg-treinamento-funcional.jpg');">
+  <div class="container reveal">
+    <h2 class="titulo-queime">Queime</h2>
+    <p class="texto-grande"><strong class="numero-laranja">800</strong> calorias por aula com o treinamento funcional</p>
+    <p class="texto-medio">Além da tonificação muscular, o <strong>treinamento funcional</strong> implica numa maior complexidade do movimento e no envolvimento de várias capacidades físicas.</p>
+  </div>
+  <div class="cta-blob cta-blob-roxo cta-blob-canto-esquerdo">
+    <p class="cta-eyebrow">Plano promocional<br>de lançamento!</p>
+    <p class="cta-preco cta-preco-pequeno">145<span class="cta-centavos">,00*</span></p>
+    <a href="#planos-funcional" class="botao botao-laranja botao-pequeno">Conheça nossos planos</a>
   </div>
 </section>
 
 <!-- ===== Planos - Pilates ===== -->
-<section id="planos-pilates" class="planos tema-pilates corte-cima corte-baixo" style="background-image: linear-gradient(rgba(245,245,245,0.93), rgba(235,235,235,0.95)), url('assets/img/bg-plano-pilates.jpg');">
-  <div class="blob blob-roxo blob-direita"></div>
+<section id="planos-pilates" class="planos tema-pilates" style="background-image: linear-gradient(rgba(248,248,248,0.94), rgba(238,238,238,0.96)), url('assets/img/bg-plano-pilates.jpg');">
   <div class="container reveal">
     <h2>PILATES</h2>
     <div class="cards-preco">
-      <div class="card-preco">
+      <div class="card-preco card-destaque">
         <p class="freq">1x por semana</p>
         <p class="preco">245<span class="preco-centavos">,00</span></p>
       </div>
@@ -126,17 +135,16 @@
         <a href="#contato" class="botao botao-roxo botao-pequeno">Agende aqui!</a>
       </div>
     </div>
-    <p class="aviso-horario">*Valores para horário de treinamento das 10:00 às 16:00hrs. Para demais valores e horários, consulte-nos.</p>
+    <p class="aviso-horario aviso-escuro">*Valores para horário de treinamento das 10:00 às 16:00hrs. Para demais valores e horários, consulte-nos.</p>
   </div>
 </section>
 
 <!-- ===== Planos - Treinamento Funcional ===== -->
-<section id="planos-funcional" class="planos tema-funcional corte-cima corte-baixo" style="background-image: linear-gradient(rgba(10,10,10,0.75), rgba(10,10,10,0.85)), url('assets/img/bg-plano-treinamento.jpg');">
-  <div class="blob blob-laranja blob-esquerda"></div>
+<section id="planos-funcional" class="planos tema-funcional" style="background-image: linear-gradient(rgba(10,10,10,0.78), rgba(10,10,10,0.88)), url('assets/img/bg-plano-treinamento.jpg');">
   <div class="container reveal">
     <h2>TREINAMENTO FUNCIONAL <span class="selo-plano">PLANO ANUAL</span></h2>
     <div class="cards-preco">
-      <div class="card-preco">
+      <div class="card-preco card-destaque">
         <p class="freq">1x por semana</p>
         <p class="preco">145<span class="preco-centavos">,00</span></p>
       </div>
@@ -158,23 +166,30 @@
 </section>
 
 <!-- ===== Combo Promocional ===== -->
-<section id="combo" class="combo corte-cima">
-  <div class="container grade-descritivo">
-    <div class="imagem-recortada reveal">
+<section id="combo" class="combo">
+  <div class="combo-diagonal">
+    <div class="combo-imagem">
       <img src="assets/img/bg-combo.jpg" alt="Combo Treinamento Funcional + Pilates">
     </div>
-    <div class="reveal">
+    <div class="combo-texto reveal">
       <h2 class="titulo-roxo">TREINE COM HORÁRIO LIVRE!</h2>
       <p class="subtitulo-roxo">É o seu treino, na hora em que você quiser!</p>
       <span class="faixa-titulo">Treinamento Funcional + Pilates</span>
-      <p class="aviso-horario aviso-escuro">*Treine sem compromisso de horário fixo</p>
-      <a href="#contato" class="botao botao-roxo">Agende aqui!</a>
+      <div class="cards-preco cards-preco-combo">
+        <div class="card-preco card-vazio"></div>
+        <div class="card-preco card-vazio"></div>
+        <div class="card-preco card-vazio"></div>
+        <div class="card-preco gratis">
+          <p>tenha uma<br><strong>EXPERIÊNCIA<br>GRÁTIS!</strong></p>
+        </div>
+      </div>
+      <a href="#contato" class="botao botao-laranja">Agende aqui!</a>
     </div>
   </div>
 </section>
 
 <!-- ===== Contato ===== -->
-<section id="contato" class="contato corte-cima">
+<section id="contato" class="contato">
   <div class="container">
     <div class="contato-grid">
       <div class="reveal">
